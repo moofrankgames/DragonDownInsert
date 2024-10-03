@@ -81,12 +81,12 @@ data =
             [ BOX_COMPONENT,
 
                 [
-                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 24, 33, 30.0] ],
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 24, 40, 31.0] ],
                      [CMP_SHAPE_VERTICAL_B, true],
                      [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
                      [CMP_PADDING_XY, [ 2.5, 4 ] ],
-                     [CMP_CUTOUT_SIDES_4B, [ t, t, f, f ] ],
-                     [CMP_CUTOUT_HEIGHT_PCT, 50],
+                     [CMP_CUTOUT_SIDES_4B, [ f, t, f, f ] ],
+                     [CMP_CUTOUT_HEIGHT_PCT, 80],
                      [CMP_CUTOUT_DEPTH_PCT, 100],
                      [CMP_CUTOUT_WIDTH_PCT, 60],
                      [CMP_CUTOUT_TYPE, EXTERIOR],
@@ -94,9 +94,11 @@ data =
                 ]
             ],   
             [ BOX_LID,
-                 [
+                 [   
+                    [ ENABLED_B, f],
                     [ LABEL,
                         [
+
                             [ LBL_TEXT,     "Legend & Fame"],
                             [ LBL_SIZE,     AUTO ],
                         ]
@@ -168,14 +170,22 @@ data =
     ], 
 
 
-     [   "Wicked Woods",
+     [   "Wicked Woods Terrain Tray",
         [
             [ BOX_SIZE_XYZ,                                     [181, 150, 20.0] ],
             [ BOX_STACKABLE_B, t],
-
+            
             [ BOX_COMPONENT,
                 [
-                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 126, 146, 14.0] ],
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 175, 143, 3.0] ],
+                     [CMP_SHAPE_VERTICAL_B, true],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
+                     [POSITION_XY,                   [2,CENTER]],
+                ]
+            ], 
+            [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 126, 146, 17.0] ],
                      [CMP_SHAPE, HEX],
                      [CMP_SHAPE_VERTICAL_B, true],
                      [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
@@ -188,7 +198,7 @@ data =
             ], 
            [ BOX_COMPONENT,
                 [
-                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 46, 68, 6.0] ],
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 46, 68, 9.0] ],
                      [CMP_SHAPE_VERTICAL_B, true],
                      [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
                      [CMP_PADDING_XY, [ 2.5, 1.5 ] ],
@@ -202,7 +212,7 @@ data =
             ], 
            [ BOX_COMPONENT,
                 [
-                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 22, 22, 14.0] ],
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 22, 22, 17.0] ],
                      [CMP_SHAPE_VERTICAL_B, true],
                      [CMP_NUM_COMPARTMENTS_XY, [ 2, 1] ],
                      [ CMP_PADDING_XY, [ 2.5, 1.5 ] ],
@@ -216,11 +226,11 @@ data =
 
            [ BOX_COMPONENT,
                 [
-                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 27, 27, 14.0] ],
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 27, 27, 17.0] ],
                      [CMP_SHAPE_VERTICAL_B, true],
                      [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
                      [ CMP_PADDING_XY, [ 2.5, 1.5 ] ],
-                     [POSITION_XY,                   [+130, +114]],
+                     [POSITION_XY,                   [+130, +109]],
                     [CMP_CUTOUT_SIDES_4B, [ f, t, f, f ] ],
                      [CMP_CUTOUT_HEIGHT_PCT, 100],
                      [CMP_CUTOUT_DEPTH_PCT, 80],
