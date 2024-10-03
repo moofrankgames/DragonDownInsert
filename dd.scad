@@ -35,7 +35,7 @@ g_tolerance_detents_pos = 0.1;
 data =
 [
    [   "Fame & Legend Box 1",
-        [
+        [                     [ ENABLED_B, t],
             [ BOX_SIZE_XYZ,                                     [150, 55, 33.0] ],
 
 
@@ -63,7 +63,7 @@ data =
     ],
 
     [   "Fame & Legend Box 2",
-        [
+        [                     [ ENABLED_B, t],
             [ BOX_SIZE_XYZ,                                     [150, 55, 33.0] ],
             [ BOX_STACKABLE_B, t],
 
@@ -110,7 +110,7 @@ data =
 
 
     [   "Money Box",
-        [
+        [                     [ ENABLED_B, t],
             [ BOX_SIZE_XYZ,                                     [140, 55, 33.0] ],
             [ BOX_STACKABLE_B, t],
 
@@ -171,7 +171,7 @@ data =
 
 
      [   "Wicked Woods Terrain Tray",
-        [
+        [                     [ ENABLED_B, t],
             [ BOX_SIZE_XYZ,                                     [181, 150, 20.0] ],
             [ BOX_STACKABLE_B, t],
             
@@ -249,6 +249,156 @@ data =
             ]                   
         ]
     ], 
+
+    [   "Wicked Woods Chips",
+        [ 
+            [ BOX_SIZE_XYZ,                             [52.0, 236.0, 38.0] ],
+
+            [ BOX_LID,
+                [
+                    [ LID_SOLID_B,       t],
+                    [ LABEL,
+                        [
+                            [ LBL_TEXT,     "Wicked Woods"],
+                            [ LBL_SIZE,     AUTO ],
+                            [ ROTATION, 90],
+                        ]
+                    ],  
+                ]
+            ],   
+
+            [ BOX_COMPONENT,
+                [
+                    [CMP_NUM_COMPARTMENTS_XY,       [1,1]],
+                    [CMP_COMPARTMENT_SIZE_XYZ,      [40, 34, 32.0] ],
+                    [CMP_SHEAR,                     [0,30]],  
+                    [POSITION_XY,                   [+2,+6]],
+                    [CMP_CUTOUT_SIDES_4B, [ f, t, f, f ] ],
+                    [CMP_CUTOUT_HEIGHT_PCT, 50],
+                    [CMP_CUTOUT_WIDTH_PCT, 60],
+
+                    [LABEL,               
+                        [
+                            [LBL_TEXT,       "Bandit"],
+                            [LBL_PLACEMENT,   RIGHT],
+                            [POSITION_XY,                   [+2,+4]],
+                            [LBL_SIZE,        4],
+                            
+                        ]
+                    ],                                                            
+                ]
+            ],                              
+        
+    
+           [ BOX_COMPONENT,
+                [
+                    [CMP_NUM_COMPARTMENTS_XY,       [1,1]],
+                    [CMP_COMPARTMENT_SIZE_XYZ,      [40, 37, 32.0] ],
+                    [CMP_SHEAR,                     [0,30]],  
+                    [POSITION_XY,                   [+2,+43]],
+                    [CMP_CUTOUT_SIDES_4B, [ f, t, f, f ] ],
+                    [CMP_CUTOUT_HEIGHT_PCT, 50],
+                    [CMP_CUTOUT_WIDTH_PCT, 60],   
+
+                     [LABEL,               
+                        [
+                            [LBL_TEXT,       "Gnoll"],
+                            [LBL_PLACEMENT,   RIGHT],
+                            [POSITION_XY,                   [+2,+4]],
+                            [LBL_SIZE,        4],
+                            
+                        ]
+                    ],                                                            
+                ]
+            ],                              
+
+            [ BOX_COMPONENT,
+                [
+                    [CMP_NUM_COMPARTMENTS_XY,       [1,1]],
+                    [CMP_COMPARTMENT_SIZE_XYZ,      [40, 29, 32.0] ],
+                    [CMP_SHEAR,                     [0,30]],  
+                    [POSITION_XY,                   [+2,+83]],
+                    [CMP_CUTOUT_SIDES_4B, [ f, t, f, f ] ],
+                    [CMP_CUTOUT_HEIGHT_PCT, 50],
+                    [CMP_CUTOUT_WIDTH_PCT, 60],   
+
+                     [LABEL,               
+                        [
+                            [LBL_TEXT,       "Owlbear"],
+                            [LBL_PLACEMENT,   RIGHT],
+                            [POSITION_XY,                   [+2,+4]],
+                            [LBL_SIZE,        4],
+                            
+                        ]
+                    ],                                                            
+                ]
+            ],     
+            [ BOX_COMPONENT,
+                [
+                    [CMP_NUM_COMPARTMENTS_XY,       [1,1]],
+                    [CMP_COMPARTMENT_SIZE_XYZ,      [40, 41, 32.0] ],
+                    [CMP_SHEAR,                     [0,30]],  
+                    [POSITION_XY,                   [+2,+115]],
+                    [CMP_CUTOUT_SIDES_4B, [ f, t, f, f ] ],
+                    [CMP_CUTOUT_HEIGHT_PCT, 50],
+                    [CMP_CUTOUT_WIDTH_PCT, 60],   
+
+                     [LABEL,               
+                        [
+                            [LBL_TEXT,       "Spider"],
+                            [LBL_PLACEMENT,   RIGHT],
+                            [POSITION_XY,                   [+2,+4]],
+                            [LBL_SIZE,        4],
+                            
+                        ]
+                    ],                                                            
+                ]
+            ],  
+            [ BOX_COMPONENT,
+                [
+                    [CMP_NUM_COMPARTMENTS_XY,       [1,1]],
+                    [CMP_COMPARTMENT_SIZE_XYZ,      [40, 29, 32.0] ],
+                    [CMP_SHEAR,                     [0,30]],  
+                    [POSITION_XY,                   [+2,+159]],
+                    [CMP_CUTOUT_SIDES_4B, [ f, t, f, f ] ],
+                    [CMP_CUTOUT_HEIGHT_PCT, 50],
+                    [CMP_CUTOUT_WIDTH_PCT, 60],   
+
+                     [LABEL,               
+                        [
+                            [LBL_TEXT,       "Treant"],
+                            [LBL_PLACEMENT,   RIGHT],
+                            [POSITION_XY,                   [+2,+4]],
+                            [LBL_SIZE,        4],
+                            
+                        ]
+                    ],                                                            
+                ]
+            ], 
+            [ BOX_COMPONENT,
+                [
+                    [CMP_NUM_COMPARTMENTS_XY,       [1,1]],
+                    [CMP_COMPARTMENT_SIZE_XYZ,      [40, 26, 32.0] ],
+                    [CMP_SHEAR,                     [0,30]],  
+                    [POSITION_XY,                   [+2,+191]],
+                    [CMP_CUTOUT_SIDES_4B, [ f, t, f, f ] ],
+                    [CMP_CUTOUT_HEIGHT_PCT, 50],
+                    [CMP_CUTOUT_WIDTH_PCT, 60],   
+
+                     [LABEL,               
+                        [
+                            [LBL_TEXT,       "Boss"],
+                            [LBL_PLACEMENT,   RIGHT],
+                            [POSITION_XY,                   [+2,+4]],
+                            [LBL_SIZE,        4],
+                            
+                        ]
+                    ],                                                            
+                ]
+            ], 
+
+        ]
+    ],
 
 ];
 
