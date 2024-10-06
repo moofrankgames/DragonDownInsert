@@ -34,22 +34,56 @@ g_tolerance_detents_pos = 0.1;
 
 data =
 [
- [   "Small Chip Box",
+  [   "Dice Box",
         [                     [ ENABLED_B, t],
-            [ BOX_SIZE_XYZ,                                     [85, 50, 45] ],
-
-
+            [ BOX_SIZE_XYZ,                                     [162, 32, 16] ],
 
 
             [ BOX_COMPONENT,
                 [
-                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 38, 44, 43 ] ], 
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 15, 28, 15] ], 
+                     [CMP_SHAPE, SQUARE],
+                     [CMP_SHAPE_VERTICAL_B, false],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 10, 1] ],
+                     [CMP_CUTOUT_SIDES_4B,                   [t,t,f,f]], // all sides
+                     [CMP_CUTOUT_HEIGHT_PCT, 80],
+                     [CMP_CUTOUT_DEPTH_PCT, 0],
+                     [CMP_CUTOUT_WIDTH_PCT, 80],
+                ]
+            ],
+
+            [ BOX_LID,
+                 [
+                    [ LABEL,
+                        [
+                            [ LBL_TEXT,     "Dice"],
+                            [ LBL_SIZE,     8 ],
+                        ]
+                    ],  
+                 ]
+            ]  
+                
+                  
+        ]
+    ],
+ [   "Small Chip Box",
+        [                     [ ENABLED_B, t],
+            [ BOX_SIZE_XYZ,                                     [85, 50, 42] ],
+            [ BOX_STACKABLE_B, f],
+            [LID_FIT_UNDER_B, f],
+
+            [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 38, 44, 42 ] ], 
                      [CMP_SHAPE, ROUND],
                      [CMP_SHAPE_VERTICAL_B, false],
                      [CMP_NUM_COMPARTMENTS_XY, [ 2, 1] ],
                      [CMP_PADDING_XY, [ 2.5, 5 ] ],
                      [CMP_SHAPE_ROTATED_B, t],
                      [CMP_CUTOUT_SIDES_4B,                   [f,f,t,t]], // all sides
+                    [CMP_CUTOUT_HEIGHT_PCT, 60],
+                     [CMP_CUTOUT_DEPTH_PCT, 20],
+                     [CMP_CUTOUT_WIDTH_PCT, 60],
                 ]
             ],
 
@@ -71,8 +105,9 @@ data =
     [   "Large Card Box",
         [                     [ ENABLED_B, t],
             [ BOX_SIZE_XYZ,                                     [25, 68, 95] ],
-
-
+            [ BOX_STACKABLE_B, f],
+            [LID_FIT_UNDER_B, f],
+            
             [ BOX_COMPONENT,
                 [
                      [CMP_COMPARTMENT_SIZE_XYZ,  [ 22, 65, 92] ], 
@@ -270,7 +305,7 @@ data =
     ], 
 
 
-     [   "Wicked Woods Terrain Tray",
+     [   "Terrain Tray",
         [                     [ ENABLED_B, t],
             [ BOX_SIZE_XYZ,                                     [181, 150, 20.0] ],
             [ BOX_STACKABLE_B, t],
@@ -350,6 +385,89 @@ data =
         ]
     ], 
 
+   [   "Mini Terrain Tray",
+        [                     [ ENABLED_B, t],
+            [ BOX_SIZE_XYZ,                                     [149, 150, 21.0] ],
+            
+            [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 126, 146, 17.0] ],
+                     [CMP_SHAPE, HEX],
+                     [CMP_SHAPE_VERTICAL_B, true],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
+                     [POSITION_XY,                   [2,CENTER]],
+                     [CMP_CUTOUT_SIDES_4B, [ t, t, f, f ] ],
+                     [CMP_CUTOUT_HEIGHT_PCT, 100],
+                     [CMP_CUTOUT_DEPTH_PCT, 20],
+                     [CMP_CUTOUT_WIDTH_PCT, 30],
+                ]
+            ], 
+           [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 46, 68, 20.0] ],
+                     [CMP_SHAPE_VERTICAL_B, true],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
+                     [CMP_PADDING_XY, [ 2.5, 1.5 ] ],
+                     [POSITION_XY,                   [CENTER,CENTER]],
+                     [CMP_CUTOUT_SIDES_4B, [ f, f, t, f ] ],
+                     [CMP_CUTOUT_HEIGHT_PCT, 100],
+                     [CMP_CUTOUT_DEPTH_PCT, 100],
+                     [CMP_CUTOUT_WIDTH_PCT, 30],
+                
+                ]
+            ], 
+           [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 22, 22, 17.0] ],
+                     [CMP_SHAPE_VERTICAL_B, true],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
+                     [ CMP_PADDING_XY, [ 2.5, 1.5 ] ],
+                     [POSITION_XY,                   [2, MAX]],
+                    [CMP_CUTOUT_SIDES_4B, [ f, t, f, f ] ],
+                     [CMP_CUTOUT_HEIGHT_PCT, 100],
+                     [CMP_CUTOUT_DEPTH_PCT, 80],
+                     [CMP_CUTOUT_WIDTH_PCT, 60],
+                ]
+            ], 
+            [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 22, 22, 17.0] ],
+                     [CMP_SHAPE_VERTICAL_B, true],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
+                     [ CMP_PADDING_XY, [ 2.5, 1.5 ] ],
+                     [POSITION_XY,                   [2, 2]],
+                    [CMP_CUTOUT_SIDES_4B, [ t, f, f, f ] ],
+                     [CMP_CUTOUT_HEIGHT_PCT, 100],
+                     [CMP_CUTOUT_DEPTH_PCT, 80],
+                     [CMP_CUTOUT_WIDTH_PCT, 60],
+                ]
+            ], 
+
+           [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 27, 27, 17.0] ],
+                     [CMP_SHAPE_VERTICAL_B, true],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
+                     [ CMP_PADDING_XY, [ 2.5, 1.5 ] ],
+                     [POSITION_XY,                   [116, 2]],
+                     [CMP_CUTOUT_SIDES_4B, [ t, f, f, f ] ],
+                     [CMP_CUTOUT_HEIGHT_PCT, 100],
+                     [CMP_CUTOUT_DEPTH_PCT, 80],
+                     [CMP_CUTOUT_WIDTH_PCT, 60],
+                ]
+            ], 
+            [ BOX_LID,
+                 [
+                    [ LABEL,
+                        [
+                            [ LBL_TEXT,     "Terrain Box"],
+                            [ LBL_SIZE,     AUTO ],
+                        ]
+                    ],  
+                 ]
+            ]                 
+        ]
+    ] 
 
 
 ];
