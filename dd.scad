@@ -36,7 +36,7 @@ data =
 [
  [   "Small Chip Box",
         [                     [ ENABLED_B, t],
-            [ BOX_SIZE_XYZ,                                     [85, 50, 46] ],
+            [ BOX_SIZE_XYZ,                                     [85, 50, 45] ],
 
 
 
@@ -67,7 +67,42 @@ data =
                   
         ]
     ],
-   [   "Small Card Box",
+
+    [   "Large Card Box",
+        [                     [ ENABLED_B, t],
+            [ BOX_SIZE_XYZ,                                     [25, 68, 95] ],
+
+
+            [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 22, 65, 92] ], 
+                     [CMP_SHAPE, SQUARE],
+                     [CMP_SHAPE_VERTICAL_B, true],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
+                     [CMP_PADDING_XY, [ 2.5, 5 ] ],
+                     [CMP_CUTOUT_SIDES_4B,                   [f,f,t,t]], // all sides
+                     [CMP_CUTOUT_HEIGHT_PCT, 60],
+                     [CMP_CUTOUT_DEPTH_PCT, 0],
+                     [CMP_CUTOUT_WIDTH_PCT, 60],
+                ]
+            ],
+
+            [ BOX_LID,
+                 [
+                    [ LABEL,
+                        [
+                            [ LBL_TEXT,     "Heroes"],
+                            [ LBL_SIZE,     AUTO ],
+                            [ ROTATION, 90],
+                        ]
+                    ]  
+                 ]
+            ]  
+                
+                  
+        ]
+    ],
+    [   "Small Card Box",
         [                     [ ENABLED_B, t],
             [ BOX_SIZE_XYZ,                                     [104, 64, 78] ],
 
@@ -225,7 +260,7 @@ data =
                  [
                     [ LABEL,
                         [
-                            [ LBL_TEXT,     "Money"],
+                            [ LBL_TEXT,     "Coins"],
                             [ LBL_SIZE,     AUTO ],
                         ]
                     ],  
@@ -306,7 +341,7 @@ data =
                  [
                     [ LABEL,
                         [
-                            [ LBL_TEXT,     "Wicked Woods"],
+                            [ LBL_TEXT,     "Terrain Boxes"],
                             [ LBL_SIZE,     AUTO ],
                         ]
                     ],  
