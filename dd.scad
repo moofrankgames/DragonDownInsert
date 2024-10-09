@@ -34,6 +34,69 @@ g_tolerance_detents_pos = 0.1;
 
 data =
 [
+
+ [   "Cubes Box",
+        [                     [ ENABLED_B, t],
+            [ BOX_SIZE_XYZ,                                     [150, 140, 20] ],
+
+
+            [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 46, 66, 18] ], 
+                     [CMP_SHAPE, FILLET],
+                     [CMP_SHAPE_VERTICAL_B, false],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 1,2 ] ],
+                    [POSITION_XY,                   [1,1]],
+
+                ]
+            ],
+
+            [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 46, 53.6, 18] ], 
+                     [CMP_SHAPE, FILLET],
+                     [CMP_SHAPE_VERTICAL_B, false],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 1,2 ] ],
+                    [POSITION_XY,                   [49,1]],
+
+                ]
+            ],
+            [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 45.3, 25, 18] ], 
+                     [CMP_SHAPE, FILLET],
+                     [CMP_SHAPE_VERTICAL_B, false],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 1,1 ] ],
+                    [POSITION_XY,                   [49,111]],
+
+                ]
+            ],
+            [ BOX_COMPONENT,
+                [
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 25, 44.3, 18] ], 
+                     [CMP_SHAPE, FILLET],
+                     [CMP_SHAPE_VERTICAL_B, false],
+                     [CMP_NUM_COMPARTMENTS_XY, [ 2,3 ] ],
+                    [POSITION_XY,                   [MAX,MAX]],
+
+                ]
+            ],
+
+            [ BOX_LID,
+                 [
+                    [ LABEL,
+                        [
+                            [ LBL_TEXT,     "Cubes"],
+                            [ LBL_SIZE,     8 ],
+                        ]
+                    ],  
+                 ]
+            ]  
+                
+                  
+        ]
+    ],
+
   [   "Dice Box",
         [                     [ ENABLED_B, t],
             [ BOX_SIZE_XYZ,                                     [162, 32, 16] ],
@@ -244,9 +307,9 @@ data =
     ], 
 
 
-    [   "Money Box",
+    [   "Coin Box",
         [                     [ ENABLED_B, t],
-            [ BOX_SIZE_XYZ,                                     [140, 55, 33.0] ],
+            [ BOX_SIZE_XYZ,                                     [150, 55, 40.0] ],
             [ BOX_STACKABLE_B, t],
 
             [ BOX_COMPONENT,
@@ -387,11 +450,11 @@ data =
 
    [   "Mini Terrain Tray",
         [                     [ ENABLED_B, t],
-            [ BOX_SIZE_XYZ,                                     [149, 150, 21.0] ],
+            [ BOX_SIZE_XYZ,                                     [149, 150, 19.0] ],
             
             [ BOX_COMPONENT,
                 [
-                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 126, 146, 17.0] ],
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 126, 146, 15.0] ],
                      [CMP_SHAPE, HEX],
                      [CMP_SHAPE_VERTICAL_B, true],
                      [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
@@ -404,7 +467,7 @@ data =
             ], 
            [ BOX_COMPONENT,
                 [
-                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 46, 68, 20.0] ],
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 46, 68, 18.0] ],
                      [CMP_SHAPE_VERTICAL_B, true],
                      [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
                      [CMP_PADDING_XY, [ 2.5, 1.5 ] ],
@@ -418,7 +481,7 @@ data =
             ], 
            [ BOX_COMPONENT,
                 [
-                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 22, 22, 17.0] ],
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 22, 22, 16.0] ],
                      [CMP_SHAPE_VERTICAL_B, true],
                      [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
                      [ CMP_PADDING_XY, [ 2.5, 1.5 ] ],
@@ -431,7 +494,7 @@ data =
             ], 
             [ BOX_COMPONENT,
                 [
-                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 22, 22, 17.0] ],
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 22, 22, 16.0] ],
                      [CMP_SHAPE_VERTICAL_B, true],
                      [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
                      [ CMP_PADDING_XY, [ 2.5, 1.5 ] ],
@@ -445,7 +508,7 @@ data =
 
            [ BOX_COMPONENT,
                 [
-                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 27, 27, 17.0] ],
+                     [CMP_COMPARTMENT_SIZE_XYZ,  [ 27, 27, 16.0] ],
                      [CMP_SHAPE_VERTICAL_B, true],
                      [CMP_NUM_COMPARTMENTS_XY, [ 1, 1] ],
                      [ CMP_PADDING_XY, [ 2.5, 1.5 ] ],
